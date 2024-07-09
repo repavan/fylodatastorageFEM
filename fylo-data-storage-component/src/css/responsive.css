@@ -1,0 +1,73 @@
+@media(max-width: 950px){
+    main {
+        display: flex;
+        flex-direction: column;
+        background: var(--main-background) url(../images/bg-mobile.png) no-repeat bottom;
+        background-size: cover;
+    }   
+    
+    .fylo, .storage{
+        width: 50%;
+        height: 10%;
+    }   
+
+    .storage{
+        padding-top:  6%;
+    }
+
+    .storage .balao {
+        top: 80%;
+        left: 25%;
+        height: 60px;  
+        width: 50%; 
+    }
+}
+
+@media(max-width: 490px){
+    main {
+        display: flex;
+        flex-direction: column;  
+        background: var(--main-background) url(../images/bg-mobile.png) no-repeat bottom;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .fylo, .storage{
+        width: 70%;
+    }
+
+    .storage{
+        height: 15%;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .storage .barra{
+        height: 15%;
+    }
+
+    .storage .barra::before{
+        padding: 2.5%;
+    }
+
+    .storage .barra :first-child{
+        height: 60%;
+        width: 4%;
+    }
+
+    .storage .balao {
+        top: 80%;
+        left: 25%;
+        height: 60px;  
+        width: 50%; 
+    }
+
+    .storage .balao span{
+        font-size: 38px;
+        height: 50px;
+    }
+
+    .storage .balao::after {
+        display: none;
+    }
+}

@@ -1,0 +1,141 @@
+body {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+main {
+    display: flex;  
+    height: 100vh;      
+    justify-content: center;
+    align-items: center;
+    background: var(--main-background) url(../images/bg-desktop.png) no-repeat bottom;    
+    background-size: 100% 50%;
+    gap: 30px;
+}
+
+.fylo {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-background);
+    padding: 30px;
+    width: 16%;
+    height: 16%;
+    border-radius: 8px;
+    border-top-right-radius: 70px;    
+}
+
+.fylo .container{
+    width: 70%;
+}
+
+.fylo .container #logo{
+    width: 53%;
+    margin: 0 0 15% 9%;
+}
+
+.fylo .container ul{
+    display: flex;
+}
+
+.fylo ul li{
+    background-color: var(--main-background);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.storage {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-background);
+    padding: 30px;
+    width: 29%;
+    height: 10%;
+    border-radius: 8px;
+    font-size: 12px;
+    position: relative;
+}
+
+.storage .barra{
+    display: flex;
+    height: 10%;
+    padding: 0.9%;
+    border-radius: 10px;
+    background-color: var(--main-background);
+    margin: 8px 0;
+    align-items: center; 
+    position: relative;
+}
+
+.storage .barra::before{
+    display: flex;
+    content: "";
+    width: 81.5%;
+    padding: 1.3%;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+
+}
+
+.storage .barra :first-child{
+    position: absolute;
+    height: 60%;
+    width: 2%;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 81.2%;
+}
+
+.storage .GB{
+    display: flex;
+    justify-content: space-between;
+}
+
+.storage .balao {
+    display: flex;
+    background-color: #fff;
+    color: hsl(229, 7%, 55%);
+    height: 50px;
+    width: 130px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    position: absolute;
+    top: -30%;
+    right: 7%;
+    padding: 5px;
+}
+
+.storage .balao::after {
+    content: "";
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 120px;
+    top: 53.8px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.storage .balao span {
+    color: var(--main-background);
+    font-size: 30px;
+    height: 40px;   
+    margin-right: 8px;
+}
+
+/* .balao:before {
+    content: "";
+    position: absolute;
+    color: aqua;
+
+} */
+
